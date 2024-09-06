@@ -1,0 +1,460 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    --Font-size-paragraph: 16px;
+    --font-weight-h: 400;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.top-middle,
+.middle-page {
+    display: flex;
+    align-items: center;
+    padding: 10vh 0vw;
+}
+
+.top-middle-image img,
+.middle-image img{
+    width: 40vw;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+
+  p{
+    font-size: var(--Font-size-paragraph);
+    font-weight: var(--font-weight-h);
+  }
+
+  .top-page,
+  .middle-page,
+  .bottom1,
+  .bottom2{
+    padding: 5vh 5vw;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+}
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+}
+
+.header-links p{
+    padding: 0vh 1vw;
+}
+
+.top-text, .middle-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 10vw;
+}
+
+.top-input {
+    padding-right: 4vw;
+    padding-bottom: 2vw;
+}
+
+.input-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 3vh 0vw;
+}
+
+
+.top-button {
+    margin-top: -10vh;
+}
+
+
+input {
+    padding: 2.5vh 1vw;
+    max-width: 20vw;
+    width: 20vw;
+    height: 5vh;
+    max-height: 5vh;
+    position: relative;
+
+}
+
+.error-message {
+    color: rgba(255, 0, 0, 0.5);
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    top: 76%;
+    left: 5%;
+    font-size: small;
+}
+
+input:focus + .error-message {
+    display: block; 
+}
+input.error {
+    border-color: red;
+}
+
+input.success {
+    border-color: green;
+}
+
+
+button {
+    background-color: var(--Bright-Blue);
+    color: white;
+    border: 2px solid;
+    max-width: 15vw;
+    width: 15vw;
+    height: 6vh;
+    max-height: 6vh;
+    cursor: pointer;
+    margin-top: 6vh;
+}
+
+button:active{
+    background-color: rgba(0, 0, 255, 0.562);
+}
+
+.middle-page {
+    background-image: url(fylo-landing-page-with-two-column-layout-master/images/bg-curve-desktop.svg);
+    mask-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 130% 100%;
+}
+
+.middle-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ins {
+    padding-bottom: 5vh;
+    color: var(--Moderate-Cyan);
+    cursor: pointer;
+}
+
+ins:active{
+    color: rgba(0, 0, 255, 0.678);
+}
+
+.card {
+    background-color: white;
+    padding: 5vh 3vw;
+    background-image: url(fylo-landing-page-with-two-column-layout-master/images/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 8% 8%;
+    background-size: 6%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 1vw;
+}
+
+.card p {
+    max-width: 25vw;
+    width: 25vw;
+}
+
+.card-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-image {
+    padding-right: 3vw;
+}
+
+.card-image img{
+    width: 5vw;
+    border-radius: 50%;
+}
+
+.bottom1 {
+    background-color: var(--Desaturated-Blue);
+    color: var(--Light-Gray);
+    display: flex;
+    align-items: center;
+}
+
+.bottom1-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 28vw;
+}
+
+.bottom1-input {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.bottom1-input .top-input {
+    padding-bottom: 10vh;
+}
+
+.bottom1-input button{
+    border: 2px solid blue;
+}
+
+.bottom2 {
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Light-Grayish-Blue);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bottom2-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icon-phone,
+.icon-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-email img,
+.icon-phone img{
+    padding-right: 2vw;
+}
+
+.bottom2-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom2-links small{
+    cursor: pointer;
+
+}
+
+.link-left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5vw;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+.link-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+.link-left :active,
+.link-right  :active{
+    color: var(--Bright-Blue);
+}
+
+
+.Social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.Social-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+
+.Social-circle:active{
+    color: var(--Bright-Blue);
+    border: 2px solid var(--Bright-Blue);
+    
+}
+
+@media screen and (max-width:767px) {
+
+    .top-middle {
+        display: flex;
+        align-items: center;
+        padding: 10vh 0vw;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .top-text {
+        display: flex;
+        align-items: center;
+        width: auto;
+        max-width: 70vw;
+    }
+
+    .top-middle-image img, .middle-image img {
+        width: 60vw;
+    }
+
+    .input-top {
+        display: flex;
+        flex-direction: column;
+        padding: 3vh 0vw;
+        align-items: flex-start;
+    }
+
+    input {
+        padding: 2.5vh 1vw;
+        max-width: 45vw;
+        width: 45vw;
+        height: 5vh;
+        max-height: 5vh;
+        position: relative;
+    }
+
+    .top-input {
+        padding-bottom: 10vw;
+    }
+
+    button{
+        max-width: 45vw;
+        width: 45vw;
+    }
+
+    .error-message {
+        top: 121%;
+        left: 70%;
+    }
+
+    .middle-page {
+        background-image: url(fylo-landing-page-with-two-column-layout-master/images/bg-curve-mobile.svg);
+        background-size: 220% 100%;
+        background-position: -70vh 0vw;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .middle-text {
+        padding-top: 5vh;
+        max-width: 59vw;
+        width: auto;
+    }
+
+    .middle-text h1 {
+        padding: 0vh 5vw;
+    }
+
+    ins {
+        padding-left: 12vw;
+    }
+
+    .card {
+        max-width: 65vw;
+        width: 65vw;
+    }
+
+    .card p {
+        max-width: 47vw;
+        width: 47vw;
+        margin-top: 4vh;
+    }
+
+    .bottom1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+    .bottom1-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0vw;
+        max-width: 42vw;
+        width: auto;
+    }
+
+    .bottom2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom2-left {
+        padding-bottom: 5vw;
+    }
+
+    .bottom2-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 5vh;
+    }
+
+    .link-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bottom2-links small {
+        padding-bottom: 2vh;
+    }
+
+
+    .Social {
+        gap: 5vw;
+    }
+
+    .header-image img{
+        max-width: 30vw;
+    }
+
+
+}
